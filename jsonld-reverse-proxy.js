@@ -23,7 +23,7 @@ async function handleRequest(request) {
   // If JSON-LD has been required
   if (hasJsonLdAcceptHeader && jsonLdUrlMap[url.pathname]) {
     // Construct JSON-LD URL for the path specified
-    const targetUrl = OPENACTIVE_GHPAGES_BASE_URL + jsonLdUrlMap[url.pathname];
+    const targetUrl = 'https://openactive.io' + jsonLdUrlMap[url.pathname];
     // Fetch JSON-LD
     let response = await fetch(targetUrl, request)
     // Recreate the response so we can modify the headers
