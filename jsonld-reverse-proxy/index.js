@@ -2,6 +2,8 @@
  * This Cloudflare reverse proxy serves JSON-LD for resources on the openactive.io
  * domain when the 'Accept' header of a request contains 'application/ld+json'.
  * This is required to ensure compliance with JSON-LD.
+ *
+ * Changes to this script must be made via https://github.com/openactive/cloudflare-reverse-proxy/
  */
 
 addEventListener('fetch', event => {
