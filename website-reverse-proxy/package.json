@@ -1,0 +1,22 @@
+{
+  "name": "website-reverse-proxy",
+  "version": "1.0.0",
+  "description": "Serves content at the subdomain https://www.openactive.io/ that is now hosted at https://openactive.io/, where a 301 redirect would break existing implementations",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/openactive/cloudflare-reverse-proxy.git"
+  },
+  "keywords": [
+    "OpenActive"
+  ],
+  "author": "Nick Evans",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/openactive/cloudflare-reverse-proxy/issues"
+  },
+  "homepage": "https://github.com/openactive/cloudflare-reverse-proxy#readme"
+}
