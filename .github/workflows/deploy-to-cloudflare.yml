@@ -1,0 +1,29 @@
+# This workflow will deploy Cloudflare workers to the LIVE environment for commits to the master branch
+name: Deploy to Cloudflare
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy-json-ld:
+    runs-on: ubuntu-latest
+    name: Deploy jsonld-reverse-proxy
+    steps:
+      - uses: actions/checkout@v2
+      - name: Publish
+        uses: cloudflare/wrangler-action@1.2.0
+        with:
+          apiToken: ${{ secrets.CF_API_TOKEN }}
+          workingDirectory: 'jsonld-reverse-proxy'
+  deploy-website:
+    runs-on: ubuntu-latest
+    name: Deploy website-reverse-proxy
+    steps:
+      - uses: actions/checkout@v2
+      - name: Publish
+        uses: cloudflare/wrangler-action@1.2.0
+        with:
+          apiToken: ${{ secrets.CF_API_TOKEN }}
+          workingDirectory: 'website-reverse-proxy'
