@@ -1,3 +1,9 @@
+/**
+ * This Cloudflare reverse proxy serves content at the subdomain https://www.openactive.io/ that is
+ * now hosted at https://openactive.io/, where a 301 redirect would break existing implementations.
+ * This is required for backwards compatibility, for example with Gladstone's OWS.
+ */
+
 addEventListener('fetch', event => {
   event.respondWith(handleRequest(event.request))
 })
