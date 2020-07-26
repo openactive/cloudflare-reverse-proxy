@@ -1,4 +1,4 @@
-# cloudflare-reverse-proxy
+# cloudflare-reverse-proxy ![Deploy to Cloudflare](https://github.com/openactive/cloudflare-reverse-proxy/workflows/Deploy%20to%20Cloudflare/badge.svg)
 This repository contains Cloudflare reverse proxy scripts for OpenActive.io.
 
 ## Purpose
