@@ -21,25 +21,7 @@ async function handleRequest(request) {
     request = new Request(request)
     let url = new URL(request.url)
     const targetUrl = request.url.replace(url.hostname, 'openactive.io')
-    // URL is set up to respond with dummy HTML, remove to send requests to your own origin
     let response = await fetch(targetUrl, request)
-    // Make the headers mutable by re-constructing the Response.
-    response = new Response(response.body, response)
-    return response
-
-  // Serve new site (can be removed when old site fully decommissioned)
-  } else if (request.headers.get('X-WP') == 'true') {
-    return fetch(request)
-  
-  // Serve old site (can be removed when old site fully decommissioned)
-  } else {
-    request = new Request(request)
-    let url = new URL(request.url)
-    const targetUrl = request.url.replace(url.hostname, TARGET_HOST)
-    // URL is set up to respond with dummy HTML, remove to send requests to your own origin
-    let response = await fetch(targetUrl, request)
-    // Make the headers mutable by re-constructing the Response.
-    response = new Response(response.body, response)
     return response
   }
 }
