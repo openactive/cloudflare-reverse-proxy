@@ -17,7 +17,8 @@ const jsonLdUrlMap = {
   '/ns-beta': '/ns-beta/beta.jsonld',
   '/test-interface': '/test-interface/test-interface.jsonld',
   '/ns-extension': '/ns-extension/extension.jsonld',
-  '/facility-types': '/facility-types/facility-types.jsonld'
+  '/facility-types': '/facility-types/facility-types.jsonld',
+  '/conformance-certification': '/conformance-certification/conformance-certification.jsonld'
 }
 
 /**
