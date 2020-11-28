@@ -28,7 +28,7 @@ async function handleRequest(request) {
   ) {
     request = new Request(request)
     let url = new URL(request.url)
-    const targetUrl = request.url.replace(url.hostname, 'openactive.io')
+    const targetUrl = request.url.replace('/assets/', '/brand-assets/').replace(url.hostname, 'openactive.io')
     let response = await fetch(targetUrl, request)
     return response
   }
