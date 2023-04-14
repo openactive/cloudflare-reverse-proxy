@@ -19,7 +19,8 @@ const jsonLdUrlMap = {
   '/ns-extension': '/ns-extension/extension.jsonld',
   '/facility-types': '/facility-types/facility-types.jsonld',
   '/place-types': '/place-types/place-types.jsonld',
-  '/conformance-certification': '/conformance-certification/conformance-certification.jsonld'
+  '/conformance-certification': '/conformance-certification/conformance-certification.jsonld',
+  '/stripe-extension': '/stripe-extension/stripe-extension.jsonld'
 }
 
 /**
