@@ -21,10 +21,6 @@ async function handleRequest(request) {
   || request.url === 'https://www.openactive.io/accessibility-support/accessibility-support.jsonld'
   || request.url === 'https://www.openactive.io/facility-types/facility-types.jsonld'
   || request.url === 'https://www.openactive.io/assets/openactive-logo-small.png'
-  // Reverse proxy for old status page (can be removed when status page updated)
-  || request.url === 'https://www.openactive.io/datasets/directory.json'
-  // Reverse proxy for validator example links that have been emailed (can be removed after time has passed)
-  || request.url.indexOf('https://www.openactive.io/data-models/versions') != -1
   ) {
     request = new Request(request)
     let url = new URL(request.url)
