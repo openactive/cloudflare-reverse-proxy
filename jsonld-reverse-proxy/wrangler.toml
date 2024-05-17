@@ -2,4 +2,4 @@ type = "javascript"
 name = "jsonld-reverse-proxy"
 account_id = "729c76109998a58d9543b615f18832ff"
 zone_id = "036fdaca5aae1198de521c69944c1c65"
-routes = ["https://openactive.io/activity-list", "https://openactive.io/accessibility-support", "https://openactive.io/", "https://openactive.io/ns-beta", "https://openactive.io/test-interface", "https://openactive.io/facility-types", "https://openactive.io/place-types", "https://openactive.io/conformance-certification", "https://openactive.io/ns-extension", "https://openactive.io/stripe-extension"]
+routes = ["https://openactive.io/activity-list", "https://openactive.io/accessibility-support", "https://openactive.io/", "https://openactive.io/ns-beta", "https://openactive.io/test-interface", "https://openactive.io/facility-types", "https://openactive.io/facility-attribute-list", "https://openactive.io/place-types", "https://openactive.io/conformance-certification", "https://openactive.io/ns-extension", "https://openactive.io/stripe-extension"]
