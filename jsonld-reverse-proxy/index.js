@@ -14,6 +14,7 @@ const jsonLdUrlMap = {
   '/': '/ns/oa.jsonld',
   '/activity-list': '/activity-list/activity-list.jsonld',
   '/accessibility-support': '/accessibility-support/accessibility-support.jsonld',
+  '/participant-condition-list': '/participant-condition-list/participant-condition-list.jsonld',
   '/ns-beta': '/ns-beta/beta.jsonld',
   '/test-interface': '/test-interface/test-interface.jsonld',
   '/ns-extension': '/ns-extension/extension.jsonld',
